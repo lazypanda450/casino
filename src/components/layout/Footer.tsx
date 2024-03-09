@@ -61,7 +61,7 @@ export default function Footer() {
         <span className="block text-sm text-gray-500 sm:text-center dark:text-gray-400">
           © 2024 Made with ❤️ by{" "}
           <a
-            href="https://twitter.com/bankkroll_eth"
+            href="https://twitter.com/socasinosol"
             className="hover:underline"
           >
             socasino Team
