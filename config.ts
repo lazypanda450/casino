@@ -53,15 +53,15 @@ export const TOKENS = [
     decimals: 6,
     baseWager: 1000000e6,
   },
-  TSTCOIN:
-  {
-    mint: new PublicKey("4j9G5bKX9YgWsjd8uTWMdHn1xSQH3Zx3v8qNmoeEBdQR"),
-    symbol: "SOCA BONUS",
-    name: "BONUS",
-    image: "",
-    decimals: 6,
-    baseWager: 1000e6,
-  },
+  // //TSTCOIN:
+  // {
+  //   mint: new PublicKey("4j9G5bKX9YgWsjd8uTWMdHn1xSQH3Zx3v8qNmoeEBdQR"),
+  //   symbol: "SOCA BONUS",
+  //   name: "TESTERCOIN",
+  //   image: "https://i.ibb.co/SvfbhLy/imageedit-37-6175591894.png",
+  //   decimals: 9,
+  //   baseWager: 1e9,
+  // },
 ];
 
 // handler for TOKENS
@@ -112,18 +112,18 @@ useTokenMeta.setFallbackHandler((mint) => {
   }
 
   // TSTCOIN
-  if (
-    mint.equals(new PublicKey("8CofuxeTuXjrZSMahW9wYkedVoNcvwua6aJeM1UhxuLh"))
-  ) {
-    return {
-      mint: new PublicKey("4j9G5bKX9YgWsjd8uTWMdHn1xSQH3Zx3v8qNmoeEBdQR"),
-      symbol: "TSTCOIN",
-      name: "TESTERCOIN",
-      image: "",
-      decimals: 9,
-      baseWager: 1 * 1e9,
-    };
-  }
+  // if (
+  //   mint.equals(new PublicKey("4j9G5bKX9YgWsjd8uTWMdHn1xSQH3Zx3v8qNmoeEBdQR"))
+  // ) {
+  //   return {
+  //     mint: new PublicKey("8CofuxeTuXjrZSMahW9wYkedVoNcvwua6aJeM1UhxuLh"),
+  //     symbol: "SOCA BONUS",
+  //     name: "BONUSCOIN",
+  //     image: "https://i.ibb.co/SvfbhLy/imageedit-37-6175591894.png",
+  //     decimals: 9,
+  //     baseWager: 1 * 1e9,
+  //   };
+  // }
 
   return undefined;
 });
